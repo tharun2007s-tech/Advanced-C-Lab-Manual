@@ -13,14 +13,45 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+struct Input
+{
+    int x;
+    int y;
+};
+
+struct Output
+{
+    int sum;
+};
+
+struct Output add(struct Input in) 
+{
+    struct Output out;
+    out.sum = in.x + in.y;
+    return out;
+}
+
+int main() {
+    struct Input values;
+    struct Output result;
+    scanf("%d", &values.x);
+    scanf("%d", &values.y);
+    result = add(values);
+    printf("%d\n", result.sum);
+
+    return 0;
+}
+```
 
 
 
 
 Output:
 
-//paste your output screenshots here
+
+<img width="393" height="367" alt="image" src="https://github.com/user-attachments/assets/ef6f7dd1-b656-4293-aa27-251c6b60df47" />
 
 
 
