@@ -16,13 +16,38 @@ Else
  
 Program:
 
-// Type your code here
+```
+#include <stdio.h>
+
+struct person {
+    int age;
+    char name[10];
+};
+
+int main() {
+    struct person p;
+    scanf("%d %s", &p.age, p.name);
+    printf("Age:%d\n", p.age);
+    printf("Name:%s", p.name);
+    printf("vaccine:%d\n", p.age); 
+    printf("eligibility:");
+
+    if (p.age > 18) {
+        printf("yes");
+    } else {
+        printf("no");
+    }
+
+    return 0;
+}
+```
 
 
 Output:
 
-// paste the output screenshot
+<img width="646" height="311" alt="image" src="https://github.com/user-attachments/assets/8cc61a7a-d394-427a-8706-4daa1ed43a65" />
+
 
 
 Result:
-Thus, the program is verified successfully.
+Thus, the program is verified successfully. 
